@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { userDelete } from './store/reducers/UserReducers';
+import { userDelete } from '../store/reducers/UserReducers';
 
-function App() {
+function Users() {
 
     const { users } = useSelector((state) => state.UserReducers);
     const dispatch = useDispatch();
@@ -22,4 +22,4 @@ function App() {
     )
 }
 
-export default App;
+export default Users;
